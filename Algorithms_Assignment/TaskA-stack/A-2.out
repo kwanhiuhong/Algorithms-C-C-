@@ -1,0 +1,40 @@
+push 12
+pop 
+push 16
+push 6
+pop 
+pop 
+push 18
+push 5
+pop 
+pop 
+push 9
+pop 
+push 10
+push 2
+pop 
+pop 
+push 8
+push 4
+pop 
+pop 
+push 3
+pop 
+push 15
+push 17
+pop 
+pop 
+push 19
+pop 
+push 20
+push 14
+pop 
+pop 
+push 7
+push 13
+pop 
+pop 
+push 1
+push 11
+pop 
+pop 
