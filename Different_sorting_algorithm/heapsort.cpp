@@ -48,6 +48,7 @@ void heapSort(int arr[], int n){
         //this is to make sure the array sorted in ascending order.
         swap(arr[0], arr[i]);
         
+        // as it swaps with the index 0, we have put 0 as i in the heapify below
         // call max heapify on the reduced heap
         heapify(arr, i, 0);
     }

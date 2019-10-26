@@ -13,18 +13,14 @@ void merge(int a[], int low, int mid, int high){
     
     // Merge the two parts into temp[].
     int count_left = 0, count_right = 0;
-    while (i <= mid && j <= high)
-    {
-        if (a[i] < a[j])
-        {
-            
-                //cout << "left: ";
+    while (i <= mid && j <= high){
+        if (a[i] < a[j]){
+            //cout << "left: ";
             temp[k] = a[i];
             //cout << a[i] << ' ';
             k++;
             i++;
-        }
-        else{
+        } else {
             //cout << "right: ";
             temp[k] = a[j];
             //cout << a[j] << ' ';
@@ -34,22 +30,19 @@ void merge(int a[], int low, int mid, int high){
     }
     //cout << endl;
     // Insert all the remaining values from i to mid into temp[].
-    while (i <= mid)
-    {
+    while (i <= mid){
         temp[k] = a[i];
         k++;
         i++;
     }
     // Insert all the remaining values from j to high into temp[].
-    while (j <= high)
-    {
+    while (j <= high){
         temp[k] = a[j];
         k++;
         j++;
     }
     // Assign sorted data stored in temp[] to a[].
-    for (i = low; i <= high; i++)
-    {
+    for (i = low; i <= high; i++){
         a[i] = temp[i-low];
     }
     //printarray(a, high);
@@ -63,6 +56,7 @@ void mergesort(int array[], int low, int high){
     }
 }
 void printarray(int array[], int size){
+    cout << "Now printing the array\n";
     for(int count = 0; count <= size; count++){
         cout << array[count] << ' ';
     }
@@ -70,7 +64,7 @@ void printarray(int array[], int size){
 }
 int main(){
     //int array[10] = {4,2,3,9,7,0,83,5,8,6};
-    int n = 200000;
+    int n = 20000;
     int array[n];
     //int array[10] = {91,88,66,55,45,39,23,12,5,4};
     //cout << "Originally, the array was random order from 1 to 200000\n";
