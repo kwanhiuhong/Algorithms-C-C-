@@ -1,0 +1,1 @@
+This repository contains all the codes in C. However most of them were in simplified Chinese as many of the codes were done by me during a MOOC(Mass online open course) offered by Zhejiang University.

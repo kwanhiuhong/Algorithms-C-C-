@@ -12,7 +12,6 @@ void merge(int a[], int low, int mid, int high){
     j = mid + 1;
     
     // Merge the two parts into temp[].
-    int count_left = 0, count_right = 0;
     while (i <= mid && j <= high){
         if (a[i] < a[j]){
             //cout << "left: ";
